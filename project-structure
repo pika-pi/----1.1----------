@@ -1,0 +1,18 @@
+printing-app/
+├── src/
+│   ├── components/
+│   │   ├── BarcodeGenerator.vue
+│   │   ├── BatchBarcodeGenerator.vue 
+│   │   └── TransportCodeGenerator.vue
+│   ├── views/
+│   │   ├── HomePage.vue
+│   │   └── TransportPage.vue
+│   ├── router/
+│   │   └── index.js
+│   ├── styles/
+│   │   └── main.css
+│   ├── App.vue
+│   └── main.js
+├── package.json
+├── vite.config.js
+└── index.html 

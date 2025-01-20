@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 耳朵 -->
+    <path d="M15 25L8 8L25 15" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M49 25L56 8L39 15" stroke="black" stroke-width="2" fill="none"/>
+    
+    <!-- 脸部轮廓 -->
+    <circle cx="32" cy="32" r="24" stroke="black" stroke-width="2" fill="none"/>
+    
+    <!-- 眼睛 -->
+    <circle cx="24" cy="28" r="3" fill="black"/>
+    <circle cx="40" cy="28" r="3" fill="black"/>
+    
+    <!-- 脸颊 -->
+    <circle cx="18" cy="34" r="4" fill="#FF4B4B" fill-opacity="0.6"/>
+    <circle cx="46" cy="34" r="4" fill="#FF4B4B" fill-opacity="0.6"/>
+    
+    <!-- 嘴巴 -->
+    <path d="M28 38C30 40 34 40 36 38" stroke="black" stroke-width="2" fill="none"/>
+</svg> 

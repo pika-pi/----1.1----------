@@ -1,0 +1,234 @@
+/* 全局通用样式 */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  padding-bottom: 8px;
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: linear-gradient(145deg, #4CAF50, #45a049);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.clear-button {
+  background: linear-gradient(145deg, #ff4757, #e84118);
+}
+
+/* 单选按钮组样式 */
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.radio-label {
+  flex: 1;
+  position: relative;
+}
+
+.radio-label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-label span {
+  display: block;
+  padding: 10px 15px;
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #666;
+}
+
+.radio-label input[type="radio"]:checked + span {
+  background: linear-gradient(145deg, #4CAF50, #45a049);
+  border-color: #3d8b40;
+  color: white;
+}
+
+/* 返回按钮样式 */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-arrow {
+  font-size: 18px;
+}
+
+/* 移动端消息提示样式 */
+.el-message {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.85), rgba(255, 98, 0, 0.85)) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2) !important;
+  min-width: 280px !important;
+}
+
+.el-message--warning,
+.el-message--error {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.85), rgba(255, 98, 0, 0.85)) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.el-message__content {
+  color: white !important;
+  font-size: 14px !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.el-message .el-message__icon {
+  color: white !important;
+  margin-right: 8px !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.el-message.mobile-message {
+  min-width: 80% !important;
+  max-width: 90% !important;
+  padding: 15px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.85), rgba(255, 98, 0, 0.85)) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.el-message.mobile-message .el-message__content {
+  font-size: 16px !important;
+  text-align: center !important;
+  color: white !important;
+}
+
+.el-message.mobile-message.el-message--warning,
+.el-message.mobile-message.el-message--error {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.85), rgba(255, 98, 0, 0.85)) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2) !important;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container,
+  .section {
+    padding: 10px;
+    margin: 0;
+    border-radius: 8px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  button,
+  .back-button,
+  .transport-button {
+    width: 100% !important;
+    padding: 12px 15px;
+    font-size: 15px;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .back-button {
+    margin-bottom: 10px;
+  }
+} 

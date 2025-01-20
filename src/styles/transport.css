@@ -1,0 +1,77 @@
+/* 运输码页面样式 */
+.transport-code {
+  width: 76mm;
+  height: 136mm;
+  padding: 15mm 5mm;
+  background: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+.transport-code.A4 {
+  width: 210mm;
+  height: 297mm;
+}
+
+.barcode-container {
+  width: 66mm;
+  height: 22mm;
+  margin: 0;
+}
+
+.barcode-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.destination {
+  font-size: 32pt;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.code-number {
+  font-size: 16pt;
+  margin: 0;
+}
+
+.info-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10mm;
+}
+
+.info-row.one-column {
+  justify-content: center;
+}
+
+.plate-number,
+.date {
+  font-size: 32pt;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .transport-code, .transport-code * {
+    visibility: visible;
+  }
+  .transport-code {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    border: none;
+  }
+} 

@@ -1,0 +1,21 @@
+{
+  "name": "printing-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.4.3",
+    "jsbarcode": "^3.11.5",
+    "vue": "^3.3.9",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.1",
+    "terser": "^5.24.0",
+    "vite": "^5.0.4"
+  }
+}
